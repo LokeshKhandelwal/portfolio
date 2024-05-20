@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import chatify from "../../Assets/Projects/chatify.png";
+import garbage from "../../Assets/Projects/garbage.png";
 import suicide from "../../Assets/Projects/istoreApp.png";
 import leaf from "../../Assets/Projects/istoreWeb.png";
 import emotion from "../../Assets/Projects/movingCar.png";
@@ -23,6 +24,15 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={suicide}
+              isBlog={false}
+              title="iStore - App"
+              description="Created a mobile shopping app for iOS and Android. Customized user profiles for regular and admin users.    Built with ReactNative, Redux, MongoDB, Express, and NodeJS, making it easy to use and ready for future updates."
+              ghLink="https://github.com/LokeshKhandelwal/iStoreWebApp"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={leaf}
               isBlog={false}
               title="iStore - Website"
@@ -31,13 +41,15 @@ function Projects() {
             />
           </Col>
 
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={garbage}
               isBlog={false}
-              title="iStore - App"
-              description="Created a mobile shopping app for iOS and Android. Customized user profiles for regular and admin users.    Built with ReactNative, Redux, MongoDB, Express, and NodeJS, making it easy to use and ready for future updates."
-              ghLink="https://github.com/LokeshKhandelwal/iStoreWebApp"
+              title="Smart Waste Management using AI"
+
+              description="The image classification for recycling project uses machine learning to sort waste materials like plastic, paper, and metal automatically. By training a model on labeled images, it enhances sorting efficiency, reduces human error, and increases recycling rates, contributing to environmental sustainability by minimizing landfill waste."
+              ghLink="https://github.com/LokeshKhandelwal/Smart-waste-management"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -50,7 +62,16 @@ function Projects() {
               ghLink="https://github.com/LokeshKhandelwal/chitChat"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Moving Car simulation"
+              description="Experience the joy of coding through this interactive car simulation. Designed to entertain and educate, it transforms learning HTML, CSS, and JavaScript into an enjoyable and rewarding experience"
+              demoLink="https://lokeshkhandelwal.github.io/Moving-Car-WEB-DEVELOPMENT/"
+              ghLink="https://github.com/LokeshKhandelwal/Moving-Car-WEB-DEVELOPMENT"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
@@ -62,6 +83,11 @@ function Projects() {
             />
           </Col>
 
+
+
+
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
@@ -70,19 +96,6 @@ function Projects() {
               description="Dark Mode is an extension that helps you quickly turn the screen (browser) to dark at night time. Toolbar button
               serves as an ON—OFF switch which enables you to easily and quickly turn the extension ON or OFF."
               ghLink="https://github.com/LokeshKhandelwal/Chrome-Extension-DarkMode"
-            />
-          </Col>
-
-
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Moving Car simulation"
-              description="Experience the joy of coding through this interactive car simulation. Designed to entertain and educate, it transforms learning HTML, CSS, and JavaScript into an enjoyable and rewarding experience"
-              demoLink="https://lokeshkhandelwal.github.io/Moving-Car-WEB-DEVELOPMENT/"
-              ghLink="https://github.com/LokeshKhandelwal/Moving-Car-WEB-DEVELOPMENT"
             />
           </Col>
         </Row>
